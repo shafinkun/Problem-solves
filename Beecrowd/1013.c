@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,max;
-    scanf("%d %d %d",&a,&b,&c);
-    if(a>b && a>c) max=a;
-    if(b>a && b>c) max=b;
-    if(c>a && c>b) max=c;
-    printf("%d eh oh maior\n",max);
+    int a,b,c,major,MaiorAB;
+    scanf("%d %d %d" ,&a ,&b ,&c);
+    MaiorAB = (a+b+abs(a-b))/2;
+    major = (MaiorAB+c+abs(MaiorAB-c))/2;
+    printf("%d eh o maior\n",major);
+
     return 0;
 }
