@@ -1,11 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int h1,m1,h2,m2,diff;
-    scanf("%d %d %d %d",&h1,&m1,&h2,&m2);
-    diff=((h2*60)+m2)-((h1*60)+m1);
-    printf("%d\n",diff);
-    if(diff<=0) diff+=24*60;
-    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)",diff/60,diff%60);
+    int st, sm, et, em, fm, ft;
+    scanf("%d %d %d %d", &st, &sm, &et, &em);
+    ft = et - st;
+    fm = em - sm;
+    if (ft < 0)
+    {
+        ft = 24 +ft;
+    }
+    if (fm < 0)
+    {
+        fm = 60 +fm;
+        ft--;
+    }
+    if (et == st && em == sm)
+    {
+        printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+    }
+    else printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", ft, fm);
     return 0;
 }
