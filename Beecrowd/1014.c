@@ -2,8 +2,8 @@
 int main()
 {
     int distance;
-    float liters;
-    scanf("%d %f",&distance,&liters);
-    printf("%.3f km/l\n",distance/liters);
+    float liter;
+    scanf("%d %f",&distance,&liter);
+    printf("%.3f km/l\n",distance/liter);
     return 0;
 }
