@@ -1,23 +1,28 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     char s[100];
-    int i,j,len=0,flag=0;
+    int i, j, len = 0, flag = 0;
     printf("Enter your string: ");
-    gets(s);
-    while(s[i]!='\0')
+    scanf("%s",&s);
+    for (i = 0; s[i] != '\0'; i++)
     {
-        i++;
         len++;
     }
-    for(i=0,j=len-1;i<=j;i++,j--)
+    if (len > 1)
     {
-        if(s[i]!=s[j])
+        for (i = 0; i < len / 2; i++)
         {
-            flag++;
-            break;
+            if (s[i] != s[len - i - 1])
+            {
+                flag = 1;
+                break;
+            }
         }
+        if (flag == 0)
+            printf("The string is palindrome.\n");
+        else
+            printf("The string is not palindrome.\n");
     }
-    if(flag=0) printf("The string is palindrome.\n");
-    else printf("The string is not palindrome.\n");
+    else printf("Wrong input. Run again\n");
 }
