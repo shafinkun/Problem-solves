@@ -3,7 +3,7 @@
 #include<string.h>
 int main()
 {
-    int i,j,n,len=0,flag=0;
+    int i,n,len=0,flag=0;
     int arr[20];
     printf("Enter your number: ");
     scanf("%d",&n);
