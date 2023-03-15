@@ -1,6 +1,5 @@
 // Palindrome check using array
 #include<stdio.h>
-#include<string.h>
 int main()
 {
     int i,n,len=0,flag=0;
@@ -12,7 +11,7 @@ int main()
         arr[i]=n%10;
         n/=10;
         len++;
-    }
+    } 
     for(i=0;i<len/2;i++)
     {
         if(arr[i]!=arr[len-1-i])
