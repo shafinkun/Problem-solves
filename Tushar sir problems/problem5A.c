@@ -13,11 +13,11 @@ int main()
             if(i%j==0)
             {    
                 flag=1;
+                break;
             }
         }
-        if(flag==0)
-            {
-                printf("%d ",i);
-            } 
+        if(flag==0) 
+            printf("%d ",i);
     }
+    
 }
