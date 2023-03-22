@@ -8,7 +8,7 @@ int main()
     while(count<=n)
     {
         flag=0;
-        for(j=2;j<=i/2;j++)
+        for(j=2;j<i;j++)
         {
             if(i%j==0)
             {
