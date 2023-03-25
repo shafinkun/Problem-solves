@@ -9,4 +9,4 @@ int main()
         if(((y*100)/x)>=50) printf("YES\n");
         else printf("No\n");
     }
-} 
+}
