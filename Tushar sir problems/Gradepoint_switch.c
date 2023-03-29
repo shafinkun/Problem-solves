@@ -7,6 +7,11 @@ int main()
     float grade;
     printf("Enter the marks of the student: ");
     scanf("%d",&marks);
+    while(marks>100)
+    {
+        printf("Wrong input\nEnter corrct marks: ");
+        scanf("%d",&marks);
+    }
     m=marks/10;
     r=marks%10;
     switch(m)
@@ -41,6 +46,7 @@ int main()
         case 1:
         case 0:
             grade=0.00;
+            break;
     }
     printf("Obtained grade is %.2f",grade);
 }

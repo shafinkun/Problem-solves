@@ -7,6 +7,11 @@ int main()
     float grade;
     printf("Enter the marks of the student: ");
     scanf("%d",&marks);
+    while(marks>100)
+    {
+        printf("Wrong input\nEnter corrct marks: ");
+        scanf("%d",&marks);
+    }
     if(marks>=80) printf("A+\n");
     else if(marks>=75) printf("A\n");
     else if(marks>=70) printf("A-\n");
