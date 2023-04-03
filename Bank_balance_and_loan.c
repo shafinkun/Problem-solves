@@ -1,5 +1,5 @@
 /* In a  bank a new accountant joined and he was calculating the total amount of money the bank currently should
-have int hteir hand. At the beginning of the calculation he found that N customers had money in this bank.
+have in their hand. At the beginning of the calculation he found that N customers had money in this bank.
 Some have balance money which are represented as positive numbers and some have loans which are represented as
 negetive float numbers.
 After his calculation he has to submit a report mentioning the Total amount, Positive Balance and the loan amount that 
