@@ -1,13 +1,31 @@
-//Printing a number triangle that has palindrome rows
-#include<stdio.h>
+// Printing a number triangle that has palindrome rows
+
+#include <stdio.h>
 int main()
 {
-    int n,i,j;
-    printf("Enter N: ");
-    scanf("%d",&n);
+    int no_rows, row, col;
+input:
+    printf("Enter the number of rows: ");
+    scanf("%d", &no_rows);
 
-    for(i=1;i<=n-1;i++)
+    if (no_rows > 1)
     {
-        for(j=1;j<=)
+        for (row = 1; row <= no_rows; row++)
+        {
+            for (col = row; col < row * 2; col++)
+            {
+                printf("%d ", col);
+            }
+            for (col = 2 * (row - 1); col >= row; col--)
+            {
+                printf("%d ", col);
+            }
+            printf("\n");
+        }
+    }
+    else
+    {
+        printf("Invalid input");
+        goto input;
     }
 }
