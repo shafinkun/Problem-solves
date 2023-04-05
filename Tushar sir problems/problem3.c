@@ -3,6 +3,7 @@
 int main()
 {
     int num,temp,r,sum=0;
+    input:
     printf("Enter your three digit number: ");
     scanf("%d",&num);
     if(num>99 && num<1000)
@@ -17,5 +18,9 @@ int main()
     if(num==sum) printf("The number is a palindrome number");
     else printf("The number is not a palindrome number");
     }
-    else printf("Wrong input.\n");
+    else 
+    {
+        printf("Wrong input");
+        goto input;
+    }
 }
