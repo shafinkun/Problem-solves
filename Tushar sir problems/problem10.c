@@ -57,7 +57,7 @@ int main()
     {
         for(j=0;j<c1;j++)
         {
-            printf("First matrix[%d][%d]: ",i,j);
+            printf("First matrix[%d][%d]: ",i+1,j+1);
             scanf("%d",&first[i][j]);
         }
         printf("\n");
@@ -67,7 +67,7 @@ int main()
     {
         for(j=0;j<c2;j++)
         {
-            printf("Second matrix[%d][%d]: ",i,j);
+            printf("Second matrix[%d][%d]: ",i+1,j+1);
             scanf("%d",&second[i][j]);
         }
         printf("\n");
