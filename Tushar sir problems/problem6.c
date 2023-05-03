@@ -12,7 +12,7 @@ input:
     {
         for (row = 1; row <= no_rows; row++)
         {
-            for (col = row; col < row * 2; col++)
+            for (col = row; col < 2 * row; col++)
             {
                 printf("%d ", col);
             }
